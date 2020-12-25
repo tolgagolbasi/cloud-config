@@ -1,7 +1,14 @@
 server:
   port: 8082
   contextPath: /task-service
-
+spring:
+  sleuth:
+    enabled: true
+    sampler:
+      percentage: 1
+    zipkin:
+      enabled: true
+      baseUrl: http://zipkin:9411
 eureka:
   client:
     serviceUrl:
