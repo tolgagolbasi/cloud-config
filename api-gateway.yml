@@ -7,12 +7,6 @@ logging:
 spring:
   aop:
     proxy-target-class: true
-# Generally the tracing data volume can be quite high; so we can tell Spring sleuth to
-# sample only some percentage of requests by specifying a double value between 0.0 and 1.0.
-
-# For testing purposes, we are sampling all requests (1.0) but generally in production you should
-# sample only 10-20% of the data or write custome strategy to sample say only in case of 500 errors.
-      percentage: 1.0
   sleuth:
     enabled: true
     sampler:
