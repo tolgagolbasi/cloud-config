@@ -13,7 +13,7 @@ sleuth:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eurekaregistry:8761/eureka/
+      defaultZone: http://eurekaregistry:8761
 
 logging:
   level:
@@ -34,7 +34,7 @@ eureka:
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://eurekaregistry:8761/eureka/
+      defaultZone: http://eurekaregistry:8761
 # Define the port where the web portal server would be running. This could always be port 8080
 # since each docker container has it's own IP
 server:

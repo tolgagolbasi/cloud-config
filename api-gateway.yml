@@ -112,7 +112,7 @@ ribbon:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eurekaregistry:8761/eureka/
+      defaultZone: http://eurekaregistry:8761
 
 ---
 
@@ -123,7 +123,7 @@ eureka:
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://eurekaregistry:8761/eureka/
+      defaultZone: http://eurekaregistry:8761
 
 # The OAuth2 server definition that would be used to send the authorization requests to
 authserver:

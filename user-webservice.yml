@@ -12,7 +12,7 @@ sleuth:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eurekaregistry:8761/eureka/
+      defaultZone: http://eurekaregistry:8761
 
 # Note that we will use the JWT token to get user data
 security:
@@ -31,7 +31,7 @@ eureka:
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://eurekaregistry:8761/eureka/
+      defaultZone: http://eurekaregistry:8761
 
 # Define the port where the API gateway server would be running. This could always be port 8080
 # since each docker container has it's own IP
