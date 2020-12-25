@@ -14,7 +14,10 @@ sleuth:
 logging:
   level:
     org.springframework.security: DEBUG
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eurekaregistry:8761/eureka/
 turbine:
   appConfig: task-webservice
   clusterNameExpression: "'default'"

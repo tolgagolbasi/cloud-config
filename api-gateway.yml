@@ -3,6 +3,10 @@ logging:
     org:
       springframework:
         security: DEBUG
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eurekaregistry:8761/eureka/
 spring:
   aop:
     proxy-target-class: true

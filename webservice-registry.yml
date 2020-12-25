@@ -6,7 +6,10 @@ sleuth:
     percentage: 1
   zipkin:
     enabled: true
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eurekaregistry:8761/eureka/
 ---
 
 spring:
