@@ -80,10 +80,10 @@ zuul:
 #      path: /api/loggedinuser/**
 #      stripPrefix: true
 #      url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/
-#    ui:
-#      path: /**
-#      stripPrefix: false
-#      serviceId: web-portal
+    ui:
+      path: /**
+      stripPrefix: false
+      serviceId: web-portal
     eureka:
       user-webservice:
         semaphore:
