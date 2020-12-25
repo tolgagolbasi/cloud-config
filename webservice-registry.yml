@@ -1,13 +1,13 @@
 server:
   port: 8761
 spring:
-  sleuth:
+sleuth:
+  enabled: true
+  sampler:
+    percentage: 1
+  zipkin:
     enabled: true
-    sampler:
-      percentage: 1
-    zipkin:
-      enabled: true
-      baseUrl: http://zipkin:9411
+    baseUrl: http://zipkin:9411
 # Defines the Eureka server that is used by the Netflix OSS components to use as the registry
 # for server discovery
 eureka:
@@ -23,13 +23,13 @@ eureka:
 
 spring:
   profiles: docker
-  sleuth:
+sleuth:
+  enabled: true
+  sampler:
+    percentage: 1
+  zipkin:
     enabled: true
-    sampler:
-      percentage: 1
-    zipkin:
-      enabled: true
-      baseUrl: http://zipkin:9411
+    baseUrl: http://zipkin:9411
 eureka:
   instance:
     hostname: eurekaregistry
