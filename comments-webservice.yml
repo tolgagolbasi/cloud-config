@@ -8,10 +8,7 @@ sleuth:
   zipkin:
     enabled: true
     baseUrl: http://zipkin:9411
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://eurekaregistry:8761
+
 
 # Note that we will use the JWT token to get user data
 security:
@@ -24,14 +21,7 @@ security:
           -----END PUBLIC KEY-----
 ---
 
-eureka:
-# Register our microservices to Eureka using hostnames in a Docker environment will not work, they will all get
-# one and the same hostname. Instead we configure them to use its IP address during registration with Eureka.
-  instance:
-    preferIpAddress: true
-  client:
-    serviceUrl:
-      defaultZone: http://eurekaregistry:8761
+
 
 # Define the port where the API gateway server would be running. This could always be port 8080
 # since each docker container has it's own IP
