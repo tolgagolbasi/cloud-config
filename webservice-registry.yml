@@ -6,6 +6,7 @@ sleuth:
     percentage: 1
   zipkin:
     enabled: true
+    baseUrl: http://zipkin:9411
 eureka:
   client:
     serviceUrl:
