@@ -28,3 +28,7 @@ spring:
 # since each docker container has it's own IP
 server:
   port: 8080
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eurekaregistry:8761/eureka/

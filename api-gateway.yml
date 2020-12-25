@@ -3,7 +3,6 @@ logging:
     org:
       springframework:
         security: DEBUG
-
 spring:
   aop:
     proxy-target-class: true
@@ -114,7 +113,10 @@ ribbon:
 ---
 
 
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eurekaregistry:8761/eureka/
 # The OAuth2 server definition that would be used to send the authorization requests to
 authserver:
     hostname: authserver
